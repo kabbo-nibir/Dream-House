@@ -15,17 +15,21 @@ class MyApp extends StatelessWidget {
       title: _title,
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(FontAwesomeIcons.bars),
+          leading: IconButton(
+            icon: const Icon(FontAwesomeIcons.bars),
+            //tooltip: 'Show Snackbar',
+            onPressed: () {},
+          ),//
           title: Center(child: const Text(_title)),
           actions: <Widget>[
             IconButton(
               icon: const Icon(FontAwesomeIcons.search),
-              tooltip: 'Show Snackbar',
+              //tooltip: 'Show Snackbar',
               onPressed: () {},
             ),
             IconButton(
               icon: const Icon(FontAwesomeIcons.bell),
-              tooltip: 'Next page',
+//              tooltip: 'Next page',
               onPressed: () {},
             ),
           ],

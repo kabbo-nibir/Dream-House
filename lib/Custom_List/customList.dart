@@ -28,12 +28,12 @@ class CustomListItemTwo extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Column(children: [
         SizedBox(
-          height: 100,
+          height: 150,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               AspectRatio(
-                aspectRatio: 1.0,
+                aspectRatio: 1.5,
                 child: thumbnail,
               ),
               Expanded(
