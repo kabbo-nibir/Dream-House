@@ -49,7 +49,6 @@ flutter:
   assets:
     - images/couch.jpg
     - images/room.jpg
-    - images/home.svg
     - images/interior.jpg
 
 

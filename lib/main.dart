@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: _title,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.white ,
           leading: IconButton(
             icon: const Icon(FontAwesomeIcons.bars,size: 15.0,color: Colors.black,),
             //tooltip: 'Show Snackbar',
