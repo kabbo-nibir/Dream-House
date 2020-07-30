@@ -11,9 +11,9 @@ class AppBody extends StatelessWidget {
       padding: const EdgeInsets.all(5.0),
       children: <Widget>[
         CustomListItemTwo(
-          thumbnail: Container(
-            decoration: const BoxDecoration(color: Colors.pink),
-//            child: FlutterLogo(),
+          widget: Container(
+//            decoration: const BoxDecoration(color: Colors.pink),
+            child: Image(image: AssetImage('images/couch3.jpg')),
           ),
           title: 'House Name',
           title_1: 'BDT: 1,000',
@@ -29,8 +29,9 @@ class AppBody extends StatelessWidget {
           color: Colors.grey,
         )),
         CustomListItemTwo(
-          thumbnail: Container(
+          widget: Container(
             decoration: const BoxDecoration(color: Colors.blue),
+            child: Image(image: AssetImage('images/couch3.jpg')),
           ),
           title: 'Flutter 1.2 Release',
           title_1: 'BDT: 1,000',
@@ -41,12 +42,12 @@ class AppBody extends StatelessWidget {
         ),
         SizedBox(
             child: Container(
-              height: 0.9,
-              width: double.infinity,
-              color: Colors.grey,
-            )),
+          height: 0.9,
+          width: double.infinity,
+          color: Colors.grey,
+        )),
         CustomListItemTwo(
-          thumbnail: Container(
+          widget: Container(
             decoration: const BoxDecoration(color: Colors.pink),
 //            child: FlutterLogo(),
           ),

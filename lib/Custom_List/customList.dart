@@ -6,7 +6,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class CustomListItemTwo extends StatelessWidget {
   CustomListItemTwo({
     Key key,
-    this.thumbnail,
+    this.widget,
     this.title,
     this.subtitle,
     this.category,
@@ -15,7 +15,7 @@ class CustomListItemTwo extends StatelessWidget {
     this.availFrom,
   }) : super(key: key);
 
-  final Widget thumbnail;
+  final Widget widget;
   final String title;
   final String subtitle;
   final String category;
@@ -34,8 +34,8 @@ class CustomListItemTwo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               AspectRatio(
-                aspectRatio: 1.2,
-                child: thumbnail,
+                aspectRatio: 1.5,
+                child: widget,
               ),
               Expanded(
                 child: Padding(

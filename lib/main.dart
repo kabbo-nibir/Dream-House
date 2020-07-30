@@ -16,19 +16,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            icon: const Icon(FontAwesomeIcons.bars),
+            icon: const Icon(FontAwesomeIcons.bars,size: 15.0,color: Colors.black,),
             //tooltip: 'Show Snackbar',
             onPressed: () {},
           ),//
-          title: Center(child: const Text(_title)),
+          title: Center(child: const Text(_title,style: TextStyle(color: Colors.black))),
           actions: <Widget>[
             IconButton(
-              icon: const Icon(FontAwesomeIcons.search),
+              icon: const Icon(FontAwesomeIcons.search,size: 15.0,color: Colors.black,),
               //tooltip: 'Show Snackbar',
               onPressed: () {},
             ),
             IconButton(
-              icon: const Icon(FontAwesomeIcons.bell),
+              icon: const Icon(FontAwesomeIcons.bell,size: 15.0,color: Colors.black,),
 //              tooltip: 'Next page',
               onPressed: () {},
             ),
