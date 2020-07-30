@@ -24,7 +24,6 @@ class AppBody extends StatelessWidget {
             availFrom: 'Available From',
           ),
         ),
-
         Card(
           child: CustomListItemTwo(
             thumbnail: Container(

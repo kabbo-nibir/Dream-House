@@ -31,7 +31,7 @@ class ArticleDescription extends StatelessWidget {
               Text(
                 '$category',
                 style: const TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 11.0,
                   color: Colors.black87,
                 ),
               ),
@@ -50,7 +50,7 @@ class ArticleDescription extends StatelessWidget {
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 11.0,
                   color: Colors.black54,
                 ),
               ),
@@ -74,7 +74,7 @@ class ArticleDescription extends StatelessWidget {
               Text(
                 '$availFrom : $publishDate',
                 style: const TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 11.0,
                   color: Colors.black54,
                 ),
               ),
