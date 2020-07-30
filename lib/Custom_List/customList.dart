@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:test_two/Articale_Description/articale.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -52,8 +53,9 @@ class CustomListItemTwo extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: 20.0,),
+        SizedBox(height: 10.0,),
         Container(
+          height: 30.0,
           child: Row(
             children: [
               Row(
