@@ -26,7 +26,7 @@ class CustomListItemTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 0.0),
       child: Column(children: [
         SizedBox(
           height: 150,
@@ -34,12 +34,12 @@ class CustomListItemTwo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               AspectRatio(
-                aspectRatio: 1.5,
+                aspectRatio: 1.2,
                 child: thumbnail,
               ),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20.0, 0.0, 2.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(20.0, 7.0, 2.0, 0.0),
                   child: ArticleDescription(
                     title: title,
                     subtitle: subtitle,
@@ -57,18 +57,22 @@ class CustomListItemTwo extends StatelessWidget {
           height: 10.0,
         ),
         Container(
-          height: 30.0,
+          height: 40.0,
           child: Row(
             children: [
               Row(
                 children: [
                   Icon(
-                    FontAwesomeIcons.heart, /*color: Colors.red,*/
+                    FontAwesomeIcons.heart,
+                    size: 15.0,
                   ),
                   SizedBox(
                     width: 10.0,
                   ),
-                  Icon(Icons.phone),
+                  Icon(
+                    Icons.phone,
+                    size: 15.0,
+                  ),
                 ],
               ),
               Expanded(child: Text('')),
@@ -76,21 +80,24 @@ class CustomListItemTwo extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   IconInfo(
-                    icon: Icon(FontAwesomeIcons.bed),
+                    icon: Icon(FontAwesomeIcons.bed,
+                        size: 15.0, color: Color.fromRGBO(130, 130, 130, 0.5)),
                     info: '2',
                   ),
                   SizedBox(
                     width: 10.0,
                   ),
                   IconInfo(
-                    icon: Icon(FontAwesomeIcons.bath),
+                    icon: Icon(FontAwesomeIcons.bath,
+                        size: 15.0, color: Color.fromRGBO(130, 130, 130, 0.5)),
                     info: '2',
                   ),
                   SizedBox(
                     width: 10.0,
                   ),
                   IconInfo(
-                    icon: Icon(Icons.zoom_out_map),
+                    icon: Icon(Icons.zoom_out_map,
+                        size: 15.0, color: Color.fromRGBO(130, 130, 130, 0.5)),
                     info: '2,000 Sqft',
                   ),
                 ],

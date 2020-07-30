@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ArticleDescription extends StatelessWidget {
@@ -24,15 +25,15 @@ class ArticleDescription extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Expanded(
-          flex: 1,
+//          flex: 1,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
                 '$category',
-                style: const TextStyle(
-                  fontSize: 11.0,
-                  color: Colors.black87,
+                style:  const TextStyle(
+                  fontSize: 10.0,
+                   color: Color.fromRGBO(189, 189, 189, 74),
                 ),
               ),
               const Padding(padding: EdgeInsets.only(bottom: 2.0)),
@@ -40,9 +41,8 @@ class ArticleDescription extends StatelessWidget {
                 '$title',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
+                style: const TextStyle(fontSize: 12.0,
+                color: Colors.black),
               ),
               const Padding(padding: EdgeInsets.only(bottom: 2.0)),
               Text(
@@ -50,37 +50,42 @@ class ArticleDescription extends StatelessWidget {
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
-                  fontSize: 11.0,
-                  color: Colors.black54,
+                  fontSize: 10.0,
+                  color: Color.fromRGBO(189, 189, 189, 74),
                 ),
               ),
-            ],
-          ),
-        ),
-        Expanded(
-          flex: 1,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
+              SizedBox(
+                height: 20.0,
+              ),
               Text(
                 '$title_1',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
-                  fontWeight: FontWeight.bold,
+                  fontSize: 12.0,
+                  color: Colors.black,
                 ),
               ),
               Text(
                 '$availFrom : $publishDate',
                 style: const TextStyle(
-                  fontSize: 11.0,
-                  color: Colors.black54,
+                  fontSize: 10.0,
+                  color: Color.fromRGBO(189, 189, 189, 74),
                 ),
               ),
             ],
           ),
         ),
+//        Expanded(
+//          flex: 1,
+//          child: Column(
+//            crossAxisAlignment: CrossAxisAlignment.start,
+//            mainAxisAlignment: MainAxisAlignment.end,
+//            children: <Widget>[
+//
+//            ],
+//          ),
+//        ),
       ],
     );
   }
