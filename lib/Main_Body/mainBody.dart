@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:test_two/Custom_List/customList.dart';
 
@@ -13,7 +14,9 @@ class AppBody extends StatelessWidget {
         CustomListItemTwo(
           widget: Container(
 //            decoration: const BoxDecoration(color: Colors.pink),
-            child: Image(image: AssetImage('images/couch3.jpg')),
+            child: FittedBox(
+                fit: BoxFit.cover,
+                child: Image(image: AssetImage('images/room.jpg'))),
           ),
           title: 'House Name',
           title_1: 'BDT: 1,000',
@@ -30,12 +33,17 @@ class AppBody extends StatelessWidget {
         )),
         CustomListItemTwo(
           widget: Container(
-            decoration: const BoxDecoration(color: Colors.blue),
-            child: Image(image: AssetImage('images/couch3.jpg')),
+//            decoration: const BoxDecoration(color: Colors.blue),
+            child: FittedBox(
+              fit: BoxFit.fitWidth,
+              child: Image(
+                image: AssetImage('images/interior.jpg'),
+              ),
+            ),
           ),
           title: 'Flutter 1.2 Release',
           title_1: 'BDT: 1,000',
-          subtitle: 'Flutter improves updates.',
+          subtitle: 'House Name',
           category: 'Category',
           publishDate: 'Feb 26',
           availFrom: 'Available From',
@@ -48,8 +56,13 @@ class AppBody extends StatelessWidget {
         )),
         CustomListItemTwo(
           widget: Container(
-            decoration: const BoxDecoration(color: Colors.pink),
-//            child: FlutterLogo(),
+//            decoration: const BoxDecoration(color: Colors.pink),
+            child: FittedBox(
+              fit: BoxFit.cover,
+              child: Image(
+                image: AssetImage('images/couch.jpg'),
+              ),
+            ),
           ),
           title: 'House Name',
           title_1: 'BDT: 1,000',

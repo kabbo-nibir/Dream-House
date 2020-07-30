@@ -39,7 +39,7 @@ class CustomListItemTwo extends StatelessWidget {
               ),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20.0, 7.0, 2.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(20.0, 10.0, 2.0, 0.0),
                   child: ArticleDescription(
                     title: title,
                     subtitle: subtitle,
