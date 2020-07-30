@@ -41,7 +41,7 @@ class AppBody extends StatelessWidget {
               ),
             ),
           ),
-          title: 'Flutter 1.2 Release',
+          title: 'House Name',
           title_1: 'BDT: 1,000',
           subtitle: 'House Name',
           category: 'Category',
