@@ -27,9 +27,9 @@ class AppBody extends StatelessWidget {
           thumbnail: Container(
             decoration: const BoxDecoration(color: Colors.blue),
           ),
-          title: 'Flutter 1.2 Release - Continual updates to the framework',
+          title: 'Flutter 1.2 Release',
           title_1: 'BDT: 1,000',
-          subtitle: 'Flutter once again improves and makes updates.',
+          subtitle: 'Flutter improves updates.',
           category: 'Category',
           publishDate: 'Feb 26',
           availFrom: 'Available From',

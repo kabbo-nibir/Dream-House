@@ -52,12 +52,13 @@ class CustomListItemTwo extends StatelessWidget {
             ],
           ),
         ),
+        SizedBox(height: 20.0,),
         Container(
           child: Row(
             children: [
               Row(
                 children: [
-                  Icon(FontAwesomeIcons.heart),
+                  Icon(FontAwesomeIcons.heart,/*color: Colors.red,*/),
                   SizedBox(
                     width: 10.0,
                   ),
@@ -77,8 +78,7 @@ class CustomListItemTwo extends StatelessWidget {
                   ),
                   IconInfo(
                     icon: Icon(
-                      FontAwesomeIcons.bath,
-                    ),
+                      FontAwesomeIcons.bath),
                     info: '2',
                   ),
                   SizedBox(
@@ -109,7 +109,7 @@ class IconInfo extends StatelessWidget {
       children: [
         icon,
         SizedBox(
-          width: 5.0,
+          width: 10.0,
         ),
         Text(info),
       ],
