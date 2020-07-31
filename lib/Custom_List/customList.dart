@@ -29,7 +29,7 @@ class CustomListItemTwo extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 0.0),
       child: Column(children: [
         SizedBox(
-          height: 150,
+          height: MediaQuery.of(context).size.height/5,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
